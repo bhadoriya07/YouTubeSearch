@@ -130,6 +130,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # STATICFILES_DIRS=[
 #     STATIC_DIR,
 # ]
-STATIC_ROOT = os.join(BASE_DIR,'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 YOUTUBE_DATA_API_KEY = 'AIzaSyA8ZzkAlsiPGjKPos_m_7lledvDIZBkpvk'
