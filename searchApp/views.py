@@ -40,7 +40,7 @@ def searchQuerry(request):
                 'title' : video_result['snippet']['title'],
                 'id' : video_result['id'],
                 'thumbnail' : video_result['snippet']['thumbnails']['high']['url'],
-                'views' : video_result['statistics']['viewCount'],
+                'views' : "{:,}".format(video_result['statistics']['viewCount']),
                 'url' : f'https://www.youtube.com/watch?v={ video_result["id"] }'
             }
             videos.append(data)
